@@ -1,0 +1,20 @@
+{
+  "values": [
+    "aeroencasedpipe:white_envelope_encased_pipe",
+    "aeroencasedpipe:orange_envelope_encased_pipe",
+    "aeroencasedpipe:magenta_envelope_encased_pipe",
+    "aeroencasedpipe:light_blue_envelope_encased_pipe",
+    "aeroencasedpipe:yellow_envelope_encased_pipe",
+    "aeroencasedpipe:lime_envelope_encased_pipe",
+    "aeroencasedpipe:pink_envelope_encased_pipe",
+    "aeroencasedpipe:gray_envelope_encased_pipe",
+    "aeroencasedpipe:light_gray_envelope_encased_pipe",
+    "aeroencasedpipe:cyan_envelope_encased_pipe",
+    "aeroencasedpipe:purple_envelope_encased_pipe",
+    "aeroencasedpipe:blue_envelope_encased_pipe",
+    "aeroencasedpipe:brown_envelope_encased_pipe",
+    "aeroencasedpipe:green_envelope_encased_pipe",
+    "aeroencasedpipe:red_envelope_encased_pipe",
+    "aeroencasedpipe:black_envelope_encased_pipe"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "aeroencasedpipe:block/envelope_encased_pipe/block_flat",
+  "textures": {
+    "0": "aeronautics:block/envelope_block/envelope_pink"
+  }
+}

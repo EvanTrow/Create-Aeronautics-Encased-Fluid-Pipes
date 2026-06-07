@@ -1,0 +1,80 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.140'
+}
+
+version = mod_version
+group = project.group
+
+base {
+    archivesName = mod_id
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+neoForge {
+    version = neoforge_version
+
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
+
+    runs {
+        client {
+            client()
+            ideName = "Client"
+            gameDirectory = project.file('runs/client')
+        }
+        server {
+            server()
+            ideName = "Server"
+            gameDirectory = project.file('runs/server')
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = "https://maven.createmod.net" }           // Create, Ponder, Flywheel
+    maven { url = "https://mvn.devos.one/snapshots" }       // Registrate
+}
+
+dependencies {
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    compileOnly("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    // Aeronautics for local dev: build Simulated-Project first, then uncomment:
+    // localRuntime(files("../Simulated-Project/aeronautics-bundled/build/libs/aeronautics-bundled-1.2.1.jar"))
+}
+
+jar {
+    // Exclude the aeronautics stubs — Aeronautics provides these classes at runtime.
+    exclude 'dev/eriksonn/aeronautics/**'
+}
+
+processResources {
+    var replaceProperties = [
+        mod_id                      : mod_id,
+        mod_name                    : mod_name,
+        mod_version                 : mod_version,
+        mod_author                  : mod_author,
+        description                 : description,
+        minecraft_version_range     : minecraft_version_range,
+        neoforge_loader_version_range: neoforge_loader_version_range,
+    ]
+    inputs.properties replaceProperties
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand replaceProperties
+    }
+}

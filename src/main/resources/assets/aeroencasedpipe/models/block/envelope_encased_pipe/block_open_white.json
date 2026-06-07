@@ -1,0 +1,6 @@
+﻿{
+  "parent": "aeroencasedpipe:block/envelope_encased_pipe/block_open",
+  "textures": {
+    "0": "aeroencasedpipe:block/envelope_encased_pipe_open_white"
+  }
+}

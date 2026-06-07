@@ -1,0 +1,17 @@
+﻿{
+  "multipart": [
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat", "x": -90}, "when": {"down": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat", "x": 90},  "when": {"up": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat", "y": 180}, "when": {"north": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat"},           "when": {"south": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat", "y": 90},  "when": {"west": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/green_envelope_encased_pipe_flat", "y": 270}, "when": {"east": "false"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green", "x": -90}, "when": {"down": "true"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green", "x": 90},  "when": {"up": "true"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green", "y": 180}, "when": {"north": "true"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green"},           "when": {"south": "true"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green", "y": 90},  "when": {"west": "true"}},
+    {"apply": {"model": "aeroencasedpipe:block/envelope_encased_pipe/block_open_green", "y": 270}, "when": {"east": "true"}}
+  ]
+}
+
