@@ -10,6 +10,6 @@ Features:
 - Crafted from a fluid pipe + the matching colored envelope block
 - Envelope break/place/hit sounds
 
-![Encased fluid pipe on airship](docs\image.png)
+![Encased fluid pipe on airship](docs/image.png)
 
 Requires: Create, Create Aeronautics
