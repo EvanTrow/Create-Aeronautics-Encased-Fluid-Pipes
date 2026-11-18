@@ -14,5 +14,13 @@
   "block.aeroencasedpipe.brown_envelope_encased_pipe": "棕色蒙皮流体管道箱",
   "block.aeroencasedpipe.green_envelope_encased_pipe": "绿色蒙皮流体管道箱",
   "block.aeroencasedpipe.red_envelope_encased_pipe": "红色蒙皮流体管道箱",
-  "block.aeroencasedpipe.black_envelope_encased_pipe": "黑色蒙皮流体管道箱"
+  "block.aeroencasedpipe.black_envelope_encased_pipe": "黑色蒙皮流体管道箱",
+
+  "aeroencasedpipe.ponder.envelope_encased_pipe.header": "用气球蒙皮密封流体管道",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_1": "气球需要气密的蒙皮才能容纳热空气",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_2": "流体管道不具有气密性，热空气会从穿过蒙皮的管道处泄漏",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_3": "可以用气球蒙皮包裹流体管道使之拥有气密性",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_4": "手持染料右击可对其染色",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_5": "潜行时用扳手右击可移除蒙皮",
+  "aeroencasedpipe.ponder.envelope_encased_pipe.text_6": "流体仍可像在普通管道中一样流过蒙皮流体管道箱"
 }

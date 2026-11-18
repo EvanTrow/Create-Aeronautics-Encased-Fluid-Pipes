@@ -52,6 +52,7 @@ repositories {
 
 dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}") { transitive = false }
     compileOnly("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // Aeronautics for local dev: build Simulated-Project first, then uncomment:
