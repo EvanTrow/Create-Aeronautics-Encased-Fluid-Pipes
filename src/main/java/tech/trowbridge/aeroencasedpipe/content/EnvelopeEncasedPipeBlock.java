@@ -64,7 +64,7 @@ public class EnvelopeEncasedPipeBlock extends EncasedPipeBlock implements Envelo
         return result;
     }
 
-    static Block lookupEnvelopeBlock(DyeColor color) {
+    public static Block lookupEnvelopeBlock(DyeColor color) {
         return BuiltInRegistries.BLOCK.getOptional(
                 ResourceLocation.fromNamespaceAndPath("aeronautics", color.getSerializedName() + "_envelope"))
                 .orElse(Blocks.AIR);
